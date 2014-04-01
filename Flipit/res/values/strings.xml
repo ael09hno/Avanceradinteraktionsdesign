@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainMenu</string>
     <string name="buttonstart_text">Start</string>
+    <string name="buttonstart_text2">Starting...</string>
 
 </resources>
