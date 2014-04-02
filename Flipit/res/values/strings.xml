@@ -7,5 +7,6 @@
     <string name="title_activity_main">MainMenu</string>
     <string name="buttonstart_text">Start</string>
     <string name="buttonstart_text2">Starting.f..</string>
+    <string name="buttonstart_text3">Starting.f..</string>
 
 </resources>
