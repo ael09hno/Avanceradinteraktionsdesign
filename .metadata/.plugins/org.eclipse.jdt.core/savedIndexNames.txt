@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Tobias\Desktop\androidWorkspace\Avanceradinteraktionsdesign\.metadata\.plugins\org.eclipse.jdt.core
-1733024046.index
-223517330.index
