@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainMenu</string>
-    <string name="buttonstart_text">Start</string>
+    <string name="buttonstart_text">FlipIt!</string>
     <string name="buttonstart_text2">Starting.f..</string>
     <string name="buttonstart_text3">Starting.f..</string>
 
