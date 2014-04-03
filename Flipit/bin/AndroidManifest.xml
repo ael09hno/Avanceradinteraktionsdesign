@@ -13,20 +13,25 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.flipit.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-         android:name="com.example.flipit.SplashActivity">
-         <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>
-      </activity>
-      <activity
-         android:name="com.example.flipit.MainActivity"
-         android:label="@string/title_activity_main" >
-         <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-         </intent-filter>
-      </activity>
-       </application>
+            android:name="com.example.flipit.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.flipit.FlipGameACtivity"
+            android:label="@string/title_activity_flip_game_activity" >
+            
+        </activity>
+    </application>
 
 </manifest>
