@@ -22,10 +22,12 @@ public class FlipGameACtivity extends Activity {
 	TextView textviewOrientation;
 	TextView laps;
 	int counter;
-	String x;
-	String x1;
-	String x2;
-	String x3;
+	boolean x0 = false;
+	boolean x1 = false;
+	boolean x2 = false;
+	boolean x3 = false;
+
+
 	OrientationEventListener myOrientationEventListener;
 
 	
@@ -44,11 +46,27 @@ public class FlipGameACtivity extends Activity {
 	    	  @Override
 	    	    public void onOrientationChanged(int arg0) {
 	    	     // TODO Auto-generated method stub
-	    		 String x = String.valueOf(arg0);
-	    		 if(x.equals("-1")){
-	    			 
+	    		 String temp = String.valueOf(arg0);
+	    		 if(temp.equals("90")){
+	    			 x0 = true;
+	    		 }
+	    		 if(temp.equals("-1") & x0){
+	    			 x1 = true;
+	    		 }
+	    		 if(temp.equals("270") & x1){
+	    			 x2 = true;
+	    		 }
+	    		 if(temp.equals("-1") & x2){
+	    			 x3 = true;
+	    		 }
+	    		 if(temp.equals("90") & x3){
+	    			 counter = counter +1;
+	    			 x1 = false;
+	    			 x2 = false;
+	    			 x3 = false;
 	    		 }
 	    	     textviewOrientation.setText("Orientation: " + String.valueOf(arg0));
+	    	     laps.setText("Laps: " + String.valueOf(counter));
 	    	    }};
 	    	    
 	    	    if (myOrientationEventListener.canDetectOrientation()){
