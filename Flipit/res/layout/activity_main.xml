@@ -13,10 +13,15 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:layout_marginTop="170dp"
         android:text="@string/buttonstart_text"
         />
+=======
+        android:layout_centerVertical="true"
+        android:onClick="flip"
+        android:text="@string/buttonstart_text" />
+>>>>>>> origin/master
 
 </RelativeLayout>

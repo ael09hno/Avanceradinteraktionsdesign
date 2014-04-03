@@ -18,12 +18,11 @@ public class SplashActivity extends Activity {
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      MediaPlayer player = new MediaPlayer();
+      MediaPlayer mp = new MediaPlayer();
       
       try {
-		player.setDataSource("/sdcard/media/audio/Laugh.ogg");
-		player.prepare();
-		player.start();
+    	mp = MediaPlayer.create(getBaseContext(), R.raw.evil);
+		mp.start();
 	} catch (IllegalArgumentException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -31,9 +30,6 @@ public class SplashActivity extends Activity {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	} catch (IllegalStateException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}

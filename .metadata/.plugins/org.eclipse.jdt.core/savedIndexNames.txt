@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+C:\Users\Henrik\Documents\GitHub\Avanceradinteraktionsdesign\.metadata\.plugins\org.eclipse.jdt.core
+3288251304.index
